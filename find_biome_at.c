@@ -7,7 +7,7 @@ int main()
     // Set up a biome generator that reflects the biome generation of
     // Minecraft 1.18.
     Generator g;
-    setupGenerator(&g, MC_1_18, 0);
+    setupGenerator(&g, MC_1_21, 0);
 
     // Seeds are internally represented as unsigned 64-bit integers.
     uint64_t seed;
