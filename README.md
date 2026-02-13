@@ -1,3 +1,21 @@
+# Find Ruined Portals
+
+This is a fork of the Cubiomes library, and this fork is used to locate ruined portals in
+the overworld as the first step to loot finding in ruined portal chests.
+
+The project is in the cubiomes/ruined_portals and can be ran at the root with:
+```
+make
+cd ruined_portals
+gcc find_ruined_portals.c ../libcubiomes.a -I.. -O2 -fwrapv -lm -o find_ruined_portals
+./find_ruined_portals --version --seed --blocks from spawn
+```
+
+Example call:
+```
+./find_ruined_portals 1.21 12345 1000
+```
+
 # cubiomes
 
 Cubiomes is a standalone library, written in C, that mimics the biome and feature generation of Minecraft Java Edition.
